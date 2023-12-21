@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My Restaurant</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">myrestaurant@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="dream_food">Dream Food</string>
+    <string name="registration">Registration</string>
+    <string name="sign_in">Sign in</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="don_t_have_an_account">Don\'t Have An Account?</string>
+    <string name="daily_meal">Daily meal</string>
+    <string name="my_cart">My Cart</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favourite">Favourite</string>
+    <string name="log_out">Log Out</string>
+    <string name="search_your_food">Search your Food!</string>
+    <string name="pizza">Pizza</string>
+    <string name="product_name">Product Name</string>
+    <string name="_5_0">5.0</string>
+    <string name="_10_00_23_00">10.00 - 23.00</string>
+    <string name="_35">35$</string>
+    <string name="description">Description</string>
+    <string name="discount">Discount</string>
+    <string name="daily_meals">Daily Meals</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="min">min</string>
+    <string name="_10_20">10-20</string>
+    <string name="_10_weekend_delicious_ndinner_recipes">10 weekend Delicious \nDinner Recipes</string>
+    <string name="your_favorite_and_testy_food_is_here">Your favorite and testy food is here!</string>
+    <string name="total">Total</string>
+    <string name="_180">180</string>
+    <string name="make_order">Make Order</string>
+    <string name="_20">20$</string>
+    <string name="order_now">Order Now</string>
+</resources>

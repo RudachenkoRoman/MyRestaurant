@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/dark_white"
+    android:elevation="15dp"
+    app:cardCornerRadius="15dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/my_cart_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/coffe"
+            app:riv_corner_radius="15dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/my_cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="150dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/start"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp" />
+
+        <TextView
+            android:id="@+id/my_cart_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.9"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="41dp"/>
+
+
+        <TextView
+            android:id="@+id/my_cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_20"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom|end"
+            android:textSize="24sp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="15dp" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table_fon"
+    tools:context=".activity.DetailedDailyMealActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/design_radius"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:contentScrim="#F12727"
+            app:collapsedTitleTextColor="@color/white"
+            app:expandedTitleTextColor="@color/white"
+            app:title="@string/daily_meals">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/detailed_daily"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/breakfast"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_bottom_left="15dp"
+                app:riv_corner_radius_bottom_right="15dp"
+                android:importantForAccessibility="no" />
+
+<!--            <Toolbar-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:titleTextColor="@color/white" />-->
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailed_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        android:importantForAccessibility="no"
+        android:layout_margin="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="normal"
+        app:backgroundTint="#F12727"
+        app:layout_anchorGravity="end|bottom"
+        app:layout_anchor="@+id/appBar"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

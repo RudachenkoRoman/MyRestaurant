@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/design_bottom_sheet"
+    android:id="@+id/bottom_sheet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_now"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/red"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/sheet_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/coffe"
+            app:riv_corner_radius="15dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/sheet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="150dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="35dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/start"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="64dp" />
+
+        <TextView
+            android:id="@+id/sheet_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.9"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="61dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_timelapse_24"
+            android:layout_gravity="end"
+            android:layout_marginEnd="95dp"
+            android:layout_marginTop="58dp" />
+
+        <TextView
+            android:id="@+id/sheet_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10_20"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:layout_marginEnd="51dp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="60dp"/>
+
+
+
+        <TextView
+            android:id="@+id/sheet_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_20"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="150dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_to_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="7dp"
+            android:background="@drawable/design_button"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </FrameLayout>
+
+</LinearLayout>
